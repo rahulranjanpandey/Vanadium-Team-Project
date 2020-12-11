@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sendinblue page_2</title>
+        <style>
+            .page2-container {
+                background-color: rgb(252, 249, 249);
+            }
+        .wrapper {
+            position: relative;
+            padding: 10px;
+            width: 75%;
+        }
+        .tool-icon1 {
+            position: relative;
+            z-index: 1;
+            width:43px;
+            height:35px;
+            padding-right: 0px;
+        }
+        .tool-icon2 {
+            position: absolute;
+            z-index: 2;
+            width: 70px;
+            height: 70px;
+            padding-left:0px;
+        }
+        .tool-icon3 {
+            position: absolute;
+            z-index: 3;
+            width: 90px;
+            height: 100px;
+            padding-left: 20px;
+            padding-top:10px;
+        }
+        .small-icon1 {
+            float: left;
+        }
+        #tool-container {
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            padding: 10px;
+            /* background-color: coral; */
+            margin: auto;
+        }
+        .tool-1 {
+                display: flex;
+                margin-left:100px;
+            }
+            .context {
+                font-size: 30px;
+                width: 30%;
+                margin: 30px;
+            }
+            .info {
+                display: flex;
+                flex: 70%;
+                margin: 30px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .info div.box {
+                height: 200px;
+                width: 350px;
+            }
+            .info div.box div {
+                display: flex;
+            }
+            .info div.box div span {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .feature-button {
+                width: 150px;
+                background-color: rgb(14, 117, 185);
+                border-radius: 80px;
+                text-align: center;
+                color:white;
+                padding-top:15px;
+                padding-bottom: 15px;
+                margin-left: 45%;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            .float-l {
+                float: left;
+                width: 40%;
+                height: 500px;
+                margin-left: 12%;
+                margin-top: 20px;
+                text-align: center;
+            }
+            .float-r {
+                float: right;
+                width: 40%;
+                height: 500px;
+                margin-right: 8%;
+                margin-top: 20px;
+            }
+            .thin-line {
+                width: 80%;
+                height: 1px;
+                background-color: rgb(240, 206, 206);
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .float-r > span:first-child {
+                font-size: 60px;
+                margin-top:10px;
+                /* font-weight: bold; */
+            }
+            .small-icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding-top: 40px;
+            }
+            .learn {
+                font-size: 20px;
+                color:rgb(14, 117, 185);
+                margin-top: 30px;
+                font-weight: bold;
+                margin-left: 60px;
+            }
+            .blue {
+                background-color: rgb(6, 59, 128);
+                width: 90%;
+                display: flex;
+                float: right;
+                /* position: absolute;
+                z-index: 2; */
+            }
+            .blue-left > div:first-child {
+                font-size: 60px;
+                color: white;
+                padding-left: 100px;
+                padding-top: 50px;
+                font-weight: bold;
+            }
+            .small-text >h1 {
+                color: white;
+                padding-left: 0px;
+                padding-bottom: 0px;
+            }
+            .small-text >p {
+                color: white;
+                padding-left: 0px;
+                padding-top:15px;
+                line-height: 0cm;
+                font-size: 20px;
+            }
+            .small-text {
+                width:200px;
+            }
+            .yellow-dash {
+                width: 20px;
+                height: 1px;
+                background-color: rgb(255, 217, 0);
+                margin-left: 0px;
+                margin-top: 80px;
+            }
+            .yellow-dash1 {
+                width: 20px;
+                height: 1px;
+                background-color: rgb(255, 217, 0);
+                margin-left: 0px;
+                margin-top: 40px;
+            }
+            .yellow-dash-flex {
+                display: flex;
+                flex-direction: row;
+                justify-self: center;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            .blue-left {
+                max-width: 50%;
+                box-sizing: border-box;
+            }
+            .gap {
+                padding-left: 0px;
+                margin-left: 0px;
+            }
+            /* .blue-right {
+                max-width: 800px;
+                float: right;
+                margin-top:0px;
+                background-color: burlywood;
+                padding-top: 0px;
+            } */
+            .blue-box1 {
+                height: 300px;
+                width: 200px;
+                border: 1px solid black;
+                text-align: center;
+                float: left;
+                margin-top:0px;
+            }
+            .blue-box2 {
+                height: 300px;
+                width: 200px;
+                background-color: blue;
+                border: 1px solid black;
+                text-align: center;
+                float: right;
+                margin-right: 50px;
+                margin-top:0px;
+            }
+            .yellow-box {
+                background-color: rgb(231, 175, 21);
+                /* position: absolute;
+                z-index: 1; */
+                width: 90%;
+                float: left;
+                display: flex;
+                justify-content: space-between;
+            }
+            .pink-image {
+                height: 450px;
+                float: right;
+                /* padding-left:30px;
+                padding-right: 50px;
+                padding-top: 50px; */
+                margin-top: 0px;
+                margin-right: 50px;
+                padding-left:0px;
+            }
+            .edvin {
+                display: flex;
+                flex-direction: row;
+            }
+            .edvin-desc {
+                padding-left: 20px;
+            }
+            .yellow-box > div > h1 {
+                font-size: 60px;
+                margin-top: 150px;
+            }
+            .yellow-box > div > p {
+                font-size: 20px;
+                line-height: 0.9cm;
+            }
+            .yellow-text {
+                max-width: 400px;
+                margin-left: 150px;
+            }
+            /* .pink-flex {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            } */
+            .bottom-pink {
+                height: 400px;
+                width: 100%;
+                background-color: pink;
+                float: left;
+            }
+            .right-blue-box {
+                width: 250px;
+                height: 300px;
+            }
+            .blue-right {
+                max-width: 50%;
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .blue-right .active {
+                background-color: rgb(55, 55, 216);
+            }
+            .pet-image {
+                margin-top: 250px;
+                margin-right: 150px;
+            }
+            .wood-img {
+                width: 290px;
+                height: 219px;
+                float: left;
+                margin-left: 180px;
+                margin-top: 120px;
+            }
+            .wood {
+                float: right;
+                margin-right: 150px;
+                margin-top: 120px;
+            }
+            .wood-text {
+                font-size: 50px;
+                font-weight: bold;
+                padding-bottom: 40px;
+            }
+            .wood-button {
+                height: 60px;
+                width: 300px;
+                background-color: rgb(14, 117, 185);
+                text-align: center;
+                font-size: 20px;
+                color: white;
+                border-radius: 50px;
+            }    
+        </style>
+    </head>
+    <body>
+        <div class="page2-container">
+            <div id="tool-container">
+                <div class="wrapper">
+                    <img class="tool-icon1" src="https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/home/section-tools/icn-obj-3.png"/>
+                    <img class="tool-icon2" src="https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/home/section-tools/icn-obj-1.png"/>
+                    <img class="tool-icon3" src="https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/home/section-tools/icn-obj-2.png"/>
+                </div>
+                <h1>All the tools you need...</h1>
+                <p>and may be a few you didn't know you needed</p>
+            </div>
+            <div class="tool-1">
+                <div class="context">
+                    Be everywhere your customers are
+                </div>
+                <div class="info">
+                    <div class="box">
+                        <div>
+                            <img height="33px" width="44px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Email-Marketing@1x.svg"/>
+                            <span>Email marketing</span>
+                        </div>
+                        <div>
+                            Get the word out and sell<br>more with sleek email<br>messages that you can<br>design in no time
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img height="38px" width="32px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-sms.svg"/>
+                            <span>SMS marketing</span>
+                        </div>
+                        <div>
+                            Communicate more directly<br>with customers for urgent<br>messages or time-sensitive<br>offers
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img height="38px" width="38px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Chat@1x.svg"/>
+                            <span>Chat</span>
+                        </div>
+                        <div>
+                            Be there for customers<br>instantly when they have a<br>question while browsing<br>your site
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img height="48px" width="48px" src="https://www.sendinblue.com/wp-content/uploads/2020/11/Inbox-2.svg"/>
+                            <span>Inbox</span>
+                        </div>
+                        <div>
+                            Keep your teams organised<br>with shared inbox and<br>never lose track of your<br>customer email history<br>again
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tool-1">
+                <div class="context">
+                    Give life to your customer journey
+                </div>
+                <div class="info">
+                    <div class="box">
+                        <div>
+                            <img height="33px" width="44px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-crm.svg"/>
+                            <span>CRM</span>
+                        </div>
+                        <div>
+                            Build stronger relationships<br>by keeping track of all your<br>customer details in one<br>place
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img height="38px" width="32px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Marketing-Auto@1x.svg"/>
+                            <span>Marketing Automation</span>
+                        </div>
+                        <div>
+                            Save time and boost<br>performance by automating<br>your segmentation and<br>marketing messages
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img height="38px" width="38px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-transactionmail.svg"/>
+                            <span>Transactional Email</span>
+                        </div>
+                        <div>
+                            step up the design,<br>engagement and <br>deliverability of your<br>transactional email<br>messages
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img height="48px" width="48px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/segmentation@1x.svg"/>
+                            <span>Segmentation</span>
+                        </div>
+                        <div>
+                            Get more engagement by<br>sending your marketing<br>messages to a more<br>targetted audience
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tool-1">
+                <div class="context">
+                    Turn your visitors into customers
+                </div>
+                <div class="info">
+                    <div class="box">
+                        <div>
+                            <img height="33px" width="44px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-landing.svg"/>
+                            <span>Landing pages</span>
+                        </div>
+                        <div>
+                            Create a more targetted<br>visitor experience with<br>dedicated pages for each<br>of your campaigns
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img height="38px" width="32px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-signup.svg"/>
+                            <span>Signup forms</span>
+                        </div>
+                        <div>
+                            Grow your email contact list<br>with custom forms that you<br>can integrate in your website
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img height="38px" width="38px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-fb.svg"/>
+                            <span>Facebook Ads</span>
+                        </div>
+                        <div>
+                            Launch facebook ads from<br>your account to retarget<br>contacts or reach new<br>audiences based on your<br>contact list
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <img height="48px" width="48px" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Target.svg"/>
+                            <span>Retargeting</span>
+                        </div>
+                        <div>
+                            Show ads to your website<br>visitors as they browse other<br>websites and bring them<br>back to convert
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-button">All Features</div>
+            <div class="thin-line"></div>
+            <div class="float-l">
+                <img width= "410px" height="380px" src="https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/common/shield.jpg"/>
+            </div>
+            <div class="float-r">
+                <span>Your data privacy and security are a top concern for us.</span>
+                <div class="small-icons">
+                    <img style="margin-left: 0px" width="79" height="50" src="https://www.sendinblue.com/wp-content/uploads/2020/06/signal-spam-grey.svg"/>
+                    <img width="52" height="29" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Shape@1x.svg"/>
+                    <img width="80" height="33" src="https://www.sendinblue.com/wp-content/uploads/2020/03/CSA@1x.svg"/>
+                </div>
+                <div class="learn">
+                    <span> >   Learn more</span>
+                </div>
+            </div>
+        </div>
+        <div class="blue">
+            <div class="blue-left">
+                <div>
+                    Join the<br>party.
+                </div>
+                <div class="yellow-dash-flex">
+                    <div class="small-text">
+                        <div class="yellow-dash"></div>
+                        <h1>100 million</h1>
+                        <p>emails every day</p>
+                    </div>
+                    <div class="small-text">
+                        <div class="yellow-dash"></div>
+                        <h1>10 years</h1>
+                        <p>expertise</p>
+                    </div>
+                    <div class="small-text">
+                        <div class="yellow-dash"></div>
+                        <h1>175,000</h1>
+                        <p>users in 160 countries</p>
+                    </div>
+                    <div class="small-text gap">
+                        <div class="yellow-dash"></div>
+                        <h1>$0</h1>
+                        <p>to get started</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blue-right">
+                    <div class="right-blue-box">
+                        <img width="216" height="250" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Vuitton@1x.svg"/>
+                    </div>
+                    <div class="right-blue-box active">
+                        <img width="250" height="250" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Amnesty-3.svg"/>
+                    </div>
+                    <div class="right-blue-box active">
+                        <img width="230" height="250" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Porcelanosa.svg"/>
+                    </div>
+                    <div class="right-blue-box">
+                        <img width="230" height="250" src="https://www.sendinblue.com/wp-content/uploads/2020/03/CodeinWp@1x.svg"/>
+                    </div>
+            </div>
+        </div>
+        <div class="yellow-box">
+            <div class="yellow-text">
+                <h1>Our Customers<br>love us! &#128525;</h1>
+                <p>"As a small team, simplifying our workflow is<br>a top priority, so having our contacts, SMS,<br>and email in one place helps us a ton!"</p>
+                <div class="edvin">
+                    <img src="https://www.sendinblue.com/wp-content/uploads/2020/03/Edwart-Chocolatier.svg"/>
+                    <div class="edvin-desc">
+                        <h4>Edvin Yansane</h4>
+                        <p>Founder @ Edwart Chocolatier</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pet-image">
+                <img class="pink-image" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Edwin_Aplha_Full_Res_B-@1x.png"/>
+            </div>
+        </div>
+        <div class="bottom-pink">
+            <img class="wood-img" src="https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/why/start-illu.jpg"/>
+            <div class="wood">
+                <span class="wood-text">Put your marketting<br>at full throttle!</span>
+                <div class="wood-button">Houston, we have list-off!</div>
+            </div>
+        </div>
+    </body>
+</html>

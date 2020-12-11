@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sendinblue page_2</title>
+        <style>
+        .wrapper {
+            position: relative;
+            padding: 10px;
+            width: 75%;
+        }
+        .tool-icon1 {
+            position: relative;
+            z-index: 1;
+            width:43px;
+            height:35px;
+            padding-right: 0px;
+        }
+        .tool-icon2 {
+            position: absolute;
+            z-index: 2;
+            width: 70px;
+            height: 70px;
+            padding-left:0px;
+        }
+        .tool-icon3 {
+            position: absolute;
+            z-index: 3;
+            width: 90px;
+            height: 100px;
+            padding-left: 20px;
+            padding-top:10px;
+        }
+        .small-icon1 {
+            float: left;
+        }
+        #tool-container {
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            padding: 10px;
+            background-color: coral;
+            margin: auto;
+        }
+        #tool1 {
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: auto auto auto auto;
+            grid-template-areas: "11 21 31 41 51"
+                                "11 21 32 41 52"
+                                "11 23 33 43 53"
+                                "11 23 34 43 54";
+            margin: 0px;
+            padding: 0px;
+        }
+        #cust {
+            display: flex;
+            flex: nowrap;
+            flex-direction: row;
+            flex-basis: 600px;
+            margin-left: 100px;
+        }
+        .c1-r1 {
+            grid-area: 11;
+        }
+        .c2-r1 {
+            grid-area: 21;
+        }
+        .c3-r1 {
+            grid-area: 31;
+            padding-left: 10px;
+            padding-bottom: 0px;
+        }
+        .c4-r1 {
+            grid-area: 41;
+        }
+        .c5-r1 {
+            grid-area: 51;
+            padding-left: 10px;
+            padding-bottom: 0px;
+        }
+        .c3-r2 {
+            grid-area: 32;
+        }
+        .c5-r2 {
+            grid-area: 52;
+        }
+        .c2-r3 {
+            grid-area: 23;
+        }
+        .c3-r3 {
+            grid-area: 33;
+            padding-left: 10px;
+            padding-bottom: 0px;
+        }
+        .c4-r3 {
+            grid-area: 43;
+        }
+        .c5-r3 {
+            grid-area: 53;
+            padding-left: 10px;
+            padding-bottom: 0px;
+        }
+        .c3-r4 {
+            grid-area: 34;
+        }
+        .c5-r4 {
+            grid-area: 54;
+        }
+        .flex1 {
+            display: flex;
+            flex-direction: row;
+            flex-basis: 300px;
+            flex: auto;
+        }
+        .flex {
+            display: flex;
+            flex: auto;
+            flex-direction: row;
+        }
+        .email {
+            width: 350px;
+            height: 200px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="tool-container">
+            <div class="wrapper">
+                <img class="tool-icon1" src="https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/home/section-tools/icn-obj-3.png"/>
+                <img class="tool-icon2" src="https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/home/section-tools/icn-obj-1.png"/>
+                <img class="tool-icon3" src="https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/home/section-tools/icn-obj-2.png"/>
+            </div>
+            <h1>All the tools you need...</h1>
+            <p>and may be a few you didn't know you needed</p>
+        </div>
+        <div id="tool1">
+            <div class="flex1" class="email">
+                <div class="c1-r1" id="cust">
+                    <h1>Be everywhere your<br>customers are</h1>
+                </div>
+                <div class="email">
+                    <div class="flex">
+                        <img class="c2-r1" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Email-Marketing@1x.svg"/>
+                        <h4 class="c3-r1" class="small-icon1">Email marketing</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c3-r2">Get the word out and sell<br>more with sleek email<br>messages that you can<br>design in no time</p>
+                </div>
+                <div class="email">
+                    <div class="flex">
+                        <img class="c4-r1" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-sms.svg"/>
+                        <h4 class="c5-r1" class= "small-icon1">SMS marketing</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c5-r2">Communicate more directly<br>with customers for urgent<br>messages or time-sensitive<br>offers</p>
+                </div>
+            </div>
+            <div class="flex1">
+                <div class="email">
+                    <div class="flex">
+                        <img class="c2-r3" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Chat@1x.svg"/>
+                        <h4 class="c3-r3" class= "small-icon1">Chat</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c3-r4">Be there for customers<br>instantly when they have a<br>question while browsing<br>your site</p>
+                </div>
+                <div class="email">
+                    <div class="flex">
+                        <img class="c4-r3" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/11/Inbox-2.svg"/>
+                        <h4 class="c5-r3" class= "small-icon1">Inbox</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c5-r4">Keep your teams organised<br>with shared inbox and<br>never lose track of your<br>customer email history<br>again</p>
+                </div>
+            </div>
+        </div>
+        <div id="tool1">
+            <div class="flex1" class="email">
+                <div class="c1-r1" id="cust">
+                    <h1>Give life to your<br>customer journey</h1>
+                </div>
+                <div class="email">
+                    <div class="flex">
+                        <img class="c2-r1" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-crm.svg"/>
+                        <h4 class="c3-r1" class="small-icon1">CRM</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c3-r2">Build stronger relationships<br>by keeping track of all your<br>customer details in one<br>place</p>
+                </div>
+                <div class="email">
+                    <div class="flex">
+                        <img class="c4-r1" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Marketing-Auto@1x.svg"/>
+                        <h4 class="c5-r1" class= "small-icon1">Marketing Automation</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c5-r2">Save time and boost<br>performance by automating<br>your segmentation and<br>marketing messages</p>
+                </div>
+            </div>
+            <div class="flex1">
+                <div class="email">
+                    <div class="flex">
+                        <img class="c2-r3" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-transactionmail.svg"/>
+                        <h4 class="c3-r3" class= "small-icon1">Transactional Email</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c3-r4">step up the design,<br>engagement and <br>deliverability of your<br>transactional email<br>messages</p>
+                </div>
+                <div class="email">
+                    <div class="flex">
+                        <img class="c4-r3" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/segmentation@1x.svg"/>
+                        <h4 class="c5-r3" class= "small-icon1">Segmentation</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c5-r4">Get more engagement by<br>sending your marketing<br>messages to a more<br>targetted audience</p>
+                </div>
+            </div>
+        </div>
+        <div id="tool1">
+            <div class="flex1" class="email">
+                <div class="c1-r1" id="cust">
+                    <h1>Give life to your<br>customer journey</h1>
+                </div>
+                <div class="email">
+                    <div class="flex">
+                        <img class="c2-r1" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-landing.svg"/>
+                        <h4 class="c3-r1" class="small-icon1">CRM</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c3-r2">Build stronger relationships<br>by keeping track of all your<br>customer details in one<br>place</p>
+                </div>
+                <div class="email">
+                    <div class="flex">
+                        <img class="c4-r1" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/Marketing-Auto@1x.svg"/>
+                        <h4 class="c5-r1" class= "small-icon1">Marketing Automation</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c5-r2">Save time and boost<br>performance by automating<br>your segmentation and<br>marketing messages</p>
+                </div>
+            </div>
+            <div class="flex1">
+                <div class="email">
+                    <div class="flex">
+                        <img class="c2-r3" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-signup.svg"/>
+                        <h4 class="c3-r3" class= "small-icon1">Transactional Email</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c3-r4">step up the design,<br>engagement and <br>deliverability of your<br>transactional email<br>messages</p>
+                </div>
+                <div class="email">
+                    <div class="flex">
+                        <img class="c4-r3" class= "small-icon1" src="https://www.sendinblue.com/wp-content/uploads/2020/03/icn-tool-fb.svg"/>
+                        <h4 class="c5-r3" class= "small-icon1">Segmentation</h4>
+                    </div>
+                    <p style="padding-left:40px" class="c5-r4">Get more engagement by<br>sending your marketing<br>messages to a more<br>targetted audience</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

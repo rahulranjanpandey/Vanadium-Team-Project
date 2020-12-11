@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title></title>
+    <style type="text/css">
+        *{  
+            background-color: black;
+
+        }
+        
+        #outer-box
+
+        div{
+            width: 300px;
+            border: 15px blue;
+            padding: 50px;
+            margin: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container-text">
+            <h2>
+                "Join the"
+                <br>
+                "party."
+            </h2>
+         <div class="container-el">
+             <div class="el">
+                 <div class="line"></div>
+                 <h4>100 million</h4>
+                 <p>emails everyday</p>
+             </div>
+             <div class="el">
+                 <div class="line"></div>
+                 <h4>10 years</h4>
+                 <p>expertise</p>
+             </div>
+             <div class="el">
+                 <div class="line"></div>
+                 <h4>175,000</h4>
+                 <p>users in 160 countries</p>
+             </div>
+             <div class="el">
+                 <div class="line"></div>
+                 <h4>$0</h4>
+                 <p>to get started</p>
+             </div>
+         </div>   
+        </div>
+        <div class="container-logos">
+            <div class="container-el">
+                <div class="el">
+                    <img src="https://www.google.com/search?q=img+greenpeace&tbm=isch&ved=2ahUKEwiTmIK6m5ntAhUxJLcAHW7nBC8Q2-cCegQIABAA&oq=img+greenpeace&gs_lcp=CgNpbWcQA1CkPVjAQmCPRWgAcAB4AIABdYgBzgKSAQMwLjOYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=e_S7X9PuGrHI3LUP7s6T-AI&bih=937&biw=1920#imgrc=kvnZoobNyjEGpM">
+                </div>
+            </div>
+        </div>
+
+        </div id="innner box">
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </body>
+</html>
